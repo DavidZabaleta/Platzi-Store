@@ -10,7 +10,7 @@ import {
     OnDestroy
 } from '@angular/core';
 
-import { Product } from '../product.module';
+import { Product } from '../../product.module';
 
 @Component({
     selector: 'app-product',
@@ -52,7 +52,6 @@ export class ProductComponent {
         //Called once, before the instance is destroyed.
         //Add 'implements OnDestroy' to the class.
         console.log('5. ngOnDestroy');
-
     }
 
     addCart() {
