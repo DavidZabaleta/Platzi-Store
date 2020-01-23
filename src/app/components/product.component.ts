@@ -14,7 +14,8 @@ import { Product } from '../product.module';
 
 @Component({
     selector: 'app-product',
-    templateUrl: './product.component.html'
+    templateUrl: './product.component.html',
+    styleUrls: ['./product.component.scss']
 })
 
 export class ProductComponent {
