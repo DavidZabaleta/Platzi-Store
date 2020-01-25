@@ -1,6 +1,15 @@
 <input type="text" [(ngModel)]="title">{{title}}
 
 <input type="text" [(ngModel)]="power">
+
+<br>
+<h3>Ingrese el color para el fondo de cada titulo</h3>
+<input type="text" [(ngModel)]="backgroundColor">
+
+<br>
+<h3>Ingrese el color para la fuente del titulo</h3>
+<input type="text" [(ngModel)]="color">
+
 <p>El valor usando el <strong>pipe</strong> personalizado es {{power | exponential}}</p>
 
 <div *ngIf="title === 'hola'">
@@ -33,6 +42,8 @@
   <app-product 
     *ngFor="let product of products" 
     (productClicked)="clickProduct($event)" 
-    [product]="product">
+    [product]="product"
+    [backgroundColor]="backgroundColor"
+    [color]="color">
   </app-product>
 </div>

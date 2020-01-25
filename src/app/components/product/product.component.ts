@@ -21,6 +21,8 @@ import { Product } from '../../product.module';
 export class ProductComponent {
 
     @Input() product: Product;
+    @Input() backgroundColor: string;
+    @Input() color: string;
     @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
     today: Date = new Date();

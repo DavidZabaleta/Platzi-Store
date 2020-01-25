@@ -13,6 +13,9 @@ export class AppComponent {
 
   power = 10;
 
+  backgroundColor: string;
+  color: string;
+
   products: Product[] = [
   {
     id: '1',
