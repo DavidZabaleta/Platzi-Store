@@ -23,11 +23,13 @@ export class ProductComponent {
     @Input() product: Product;
     @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
+    today: Date = new Date();
+
     constructor() {
         console.log('1. Soy un constructor');
     }
 
-    ngOnChanges(changes: SimpleChanges): void {
+    /* ngOnChanges(changes: SimpleChanges): void {
         //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
         //Add '${implements OnChanges}' to the class.
         console.log('2. ngOnChanges');
@@ -52,7 +54,7 @@ export class ProductComponent {
         //Called once, before the instance is destroyed.
         //Add 'implements OnDestroy' to the class.
         console.log('5. ngOnDestroy');
-    }
+    } */
 
     addCart() {
         console.log('Agregado');

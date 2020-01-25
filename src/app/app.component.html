@@ -1,5 +1,8 @@
 <input type="text" [(ngModel)]="title">{{title}}
 
+<input type="text" [(ngModel)]="power">
+<p>El valor usando el <strong>pipe</strong> personalizado es {{power | exponential}}</p>
+
 <div *ngIf="title === 'hola'">
   Soy un div
 </div>
