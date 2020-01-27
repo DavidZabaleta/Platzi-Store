@@ -1,0 +1,17 @@
+<h3>Ingrese el color para el fondo de cada titulo</h3>
+<input type="text" [(ngModel)]="backgroundColor">
+
+<br>
+<h3>Ingrese el color para la fuente del titulo</h3>
+<input type="text" [(ngModel)]="color">
+
+<div class="product-grid" routerLink="/products">
+    <app-product 
+      *ngFor="let product of products" 
+      (productClicked)="clickProduct($event)" 
+      [product]="product"
+      [backgroundColor]="backgroundColor"
+      [color]="color">
+    </app-product>
+</div>
+  

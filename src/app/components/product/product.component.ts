@@ -10,7 +10,7 @@ import {
     OnDestroy
 } from '@angular/core';
 
-import { Product } from '../../product.module';
+import { Product } from './product.module';
 
 @Component({
     selector: 'app-product',
