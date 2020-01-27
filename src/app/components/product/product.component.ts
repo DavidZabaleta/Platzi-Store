@@ -27,7 +27,7 @@ export class ProductComponent {
         console.log('1. Soy un constructor');
     }
 
-    ngOnChanges(changes: SimpleChanges): void {
+    /* ngOnChanges(changes: SimpleChanges): void {
         //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
         //Add '${implements OnChanges}' to the class.
         console.log('2. ngOnChanges');
@@ -43,7 +43,8 @@ export class ProductComponent {
     }
 
     ngDoCheck(): void {
-        //Called every time that the input properties of a component or a directive are checked. Use it to extend change detection by performing a custom check.
+        //Called every time that the input properties of a component or a directive are checked. 
+        Use it to extend change detection by performing a custom check.
         //Add 'implements DoCheck' to the class.
         console.log('4. ngDoCheck');
     }
@@ -52,13 +53,10 @@ export class ProductComponent {
         //Called once, before the instance is destroyed.
         //Add 'implements OnDestroy' to the class.
         console.log('5. ngOnDestroy');
-    }
+    } */
 
     addCart() {
         console.log('Agregado');
         this.productClicked.emit(this.product.id);
     }
-
-
-
 }
