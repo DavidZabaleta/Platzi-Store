@@ -11,8 +11,11 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { ContactComponent } from './components/contact/contact.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProductsComponent } from './components/products/products.component';
-import { HomeComponent } from './components/home/home.component';
 import { DemoComponent } from './components/demo/demo.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +27,11 @@ import { DemoComponent } from './components/demo/demo.component';
     ContactComponent,
     NotFoundComponent,
     ProductsComponent,
-    HomeComponent,
-    DemoComponent
+    DemoComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProductDetailComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
