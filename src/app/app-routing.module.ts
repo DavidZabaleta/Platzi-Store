@@ -8,6 +8,7 @@ import { ProductsComponent } from './components/products/components/products/pro
 import { DemoComponent } from './components/demo/components/demo/demo.component';
 import { ProductDetailComponent } from './components/product-detail/components/product-detail/product-detail.component';
 import { LayoutComponent } from './components/layout/components/layout/layout.component';
+import { AdminGuard } from './guards/admin.guard';
 
 const routes: Routes = [
   {
@@ -40,9 +41,14 @@ const routes: Routes = [
         loadChildren: () => import('./components/product-detail/product-detail.module').then(m => m.ProductDetailModule)      },
       {
         path: 'contact',
+        canActivate: [AdminGuard],
         loadChildren: () => import('./components/contact/contact.module').then(m => m.ContactModule)
       }
     ]
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
     path: '**',

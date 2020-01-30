@@ -5,6 +5,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProductComponent } from './components/product/product.component';
 import { FormsModule } from '@angular/forms';
+import { MaterialModule } from 'src/app/material/material.module';
 
 
 
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     ProductsRoutingModule,
     FormsModule,
     SharedModule,
+    MaterialModule,
     CommonModule
   ]
 })
