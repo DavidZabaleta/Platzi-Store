@@ -4,37 +4,25 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './components/product/product.component';
-import { CartComponent } from './components/cart/cart.component';
-import { ExponentialPipe } from './pipes/exponential.pipe';
-import { HighlightDirective } from './directives/highlight.directive';
-import { ContactComponent } from './components/contact/contact.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
-import { ProductsComponent } from './components/products/products.component';
-import { DemoComponent } from './components/demo/demo.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { LayoutComponent } from './components/layout/layout.component';
+import { ProductComponent } from './components/products/components/product/product.component';
+import { NotFoundComponent } from './components/not-found/components/not-found/not-found.component';
+import { ProductsComponent } from './components/products/components/products/products.component';
+import { ProductDetailComponent } from './components/product-detail/components/product-detail/product-detail.component';
+import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
+import { LayoutModule } from './components/layout/layout.module';
+import { NotFoundModule } from './components/not-found/not-found.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductComponent,
-    CartComponent,
-    ExponentialPipe,
-    HighlightDirective,
-    ContactComponent,
-    NotFoundComponent,
-    ProductsComponent,
-    DemoComponent,
-    HeaderComponent,
-    FooterComponent,
-    ProductDetailComponent,
-    LayoutComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    SharedModule,
+    LayoutModule,
+    NotFoundModule,
+    CoreModule,
     FormsModule,
     AppRoutingModule
   ],
