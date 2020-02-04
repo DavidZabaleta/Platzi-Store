@@ -30,7 +30,7 @@ const routes: Routes = [
         component: EditProductComponent
       },
       {
-        path: 'dashboard',
+        path: '',
         component: DashboardComponent
       }
     ]
